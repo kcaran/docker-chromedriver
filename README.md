@@ -9,6 +9,8 @@ https://github.com/SeleniumHQ/docker-selenium
 ## How to use this image
 
 ```
-$ docker run -d -p 9515:9515 -p 5900:5900 -v /dev/shm:/dev/shm chromedriver/latest
+$ docker build -t chromedriver:latest .
+$ docker run -d -p 9515:9515 -p 5901:5900 -v /dev/shm:/dev/shm chromedriver/latest
 ```
 
+The default VNC password is *secret*.
